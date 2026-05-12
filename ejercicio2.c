@@ -6,9 +6,10 @@ int main() {
 
     ptr = &vocales[0];
 
-    for (size_t i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
-        printf("%c", vocales[i]);
+        printf("%c\n", vocales[i]);
+        printf("%c\n", *(ptr +i));
     }
     return 0;
 }

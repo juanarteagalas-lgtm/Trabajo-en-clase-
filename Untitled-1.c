@@ -1,11 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int arreglo[] = {2, 4, 6, 8, 10};
-    int tamaño = sizeof(arreglo) / sizeof(arreglo[0]);
+    int arreglo[] = {2, 4, 6, 8, 10};  //declaracion de arreglo
+    
+    //implementacioon de punteros
+    int *ptr;
+    ptr = &arreglo[0];
 
-    for (int i = 0; i < tamaño; i++) {
-        printf("%d ", arreglo[i]);
+    for (int i = 0; i < 5; i++) {   //imprimir los elementos del arreglo 
+        printf("elemento %d: %d \n", i, arreglo[i]);   
+        printf("%d", ptr);
     }
 
     return 0;
